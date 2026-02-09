@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <list>
+#include <iterator>
 
 void test_vector(void)
 {
@@ -24,8 +25,7 @@ void test_list(void)
 	for (int i = 1; i <= 5; i++)
 		l.push_back(i);
 	it = l.begin();
-	++it;
-	++it;
+	std::advance(it, 2); // Ou ++it; ++it;
 	l.insert(it, 42);
 	for (it = l.begin(); it != l.end(); ++it)
 		std::cout << *it << ' ';
