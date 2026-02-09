@@ -36,3 +36,19 @@ Implémentation :
 Contraintes :
 pas d’accès par indice ([i])
 insertion via itérateurs uniquement
+
+## Exercice 3 — “Erase safely in a loop”
+
+### Situation
+
+Tu as un vector d’entiers :
+
+```cpp
+   std::vector<int> v;
+   for (int i = 1; i <= 10; ++i)
+      v.push_back(i);
+```
+
+Objectif : supprimer tous les éléments pairs de ce vector dans une boucle.
+
+Trouve une version correcte, en C++98, qui ne saute aucun élément et ne plante jamais.
