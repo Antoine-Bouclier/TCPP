@@ -1,3 +1,5 @@
+#Socket
+
 Sockets are a way to speak to other programs using standard Unix file descriptors. To get the file descriptor for network communication, we need to make a call to the ```socket()``` system routine. It return the socket descriptor. We communicate through it using ```send()``` and ```recv()``` socket calls. 
 
 We can also use ```read()```and ```write()```, but ```send()``` and ```recv()``` offer much greater control over the data transmission.
