@@ -45,8 +45,9 @@ int main(void)
 	/* Creating the server socket */
 	int serverSocket = socket(AF_INET, SOCK_STREAM, 0);
 	// AF_INET -> Internet protocol v4 addresses (IPV4)
-	// SOCK_STREAM -> TCP socket /* Defining server adress */
-
+	// SOCK_STREAM -> TCP socket
+	
+	/* Defining server adress */
 	sockaddr_in serverAddress;
 	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_port = htons(8080);
@@ -105,5 +106,6 @@ int main(void)
 		}
 	}
 	/* close server socket */
-	close(serverSocket); return (0);
+	close(serverSocket);
+	return (0);
 }

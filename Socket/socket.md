@@ -46,6 +46,10 @@ SOCK_STREAM	->	TCP socket
 	serverAdress.sin_addr.s_addr = INADDR_ANY; // Accept connections on any IP.
 ```
 
+## htons() && htonl()
+
+Convert values between host and network byte order. The htonl() function converts a **unsigned int**, and htons() an **unsigned short int** (MAX => 65535)
+
 ## bind()
 
 ```c
